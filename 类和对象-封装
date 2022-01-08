@@ -1,0 +1,33 @@
+#include <iostream> 
+#include <stdlib.h>
+#include <string>
+using namespace std;
+const double Pi=3.14; 
+//设计一个类,以圆为例子 
+  
+class Circle{   //class代表一个类,类后面紧跟着名称 
+
+    //访问权限
+	 public:      //公共            
+	
+	 //属性   通常用变量 
+	  int  r ;   //半径            
+				 
+	//行为  通常用函数 
+	double   Circlezc(){
+		
+		return  2*Pi*r;
+	}
+	
+};
+
+int main(){
+	//通过类(圆),创建具体的对象(圆)
+	//实例化, 通过一个类创建一个对象 
+	Circle c1; 
+	//给对象属性赋值 
+	c1.r=10;
+	
+	cout<<"圆的周长为:  " <<c1.Circlezc()<<endl; 
+	return 0;
+}
